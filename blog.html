@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Read Our Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"><i class="fas fa-book-open"></i>Edge</span
+          >Ledger
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#cases">Cases</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h1>Blog</h1>
+      </div>
+    </header>
+    <main>
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="/images/bigpost/post2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h4>Blog Post One</h4>
+              <p class="meta">
+                <i class="fas fa-user"></i>Posted by<strong>Virat Kohli</strong>
+                | January 01 2021
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+                suscipit nemo porro. Deserunt, veritatis minima pariatur
+                accusamus tempore exercitationem eius quaerat! Deleniti ipsum ex
+                voluptatum commodi voluptas aut corporis molestias?
+              </p>
+              <a href="post.html" class="btn btn-dark"
+                ><i class="fas fa-chevron"></i> Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="flex-columns">
+        <div class="row x1">
+          <div class="column">
+            <div class="column-1">
+              <img src="/images/bigpost/post3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-dark">
+              <h4>Blog Post Two</h4>
+              <p class="meta">
+                <i class="fas fa-user"></i>Posted by<strong>Sara Taylor</strong>
+                | January 27 2021
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+                suscipit nemo porro. Deserunt, veritatis minima pariatur
+                accusamus tempore exercitationem eius quaerat! Deleniti ipsum ex
+                voluptatum commodi voluptas aut corporis molestias?
+              </p>
+              <a href="post.html" class="btn btn-light"
+                ><i class="fas fa-chevron"></i> Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="/images/bigpost/post1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h4>Blog Post Three</h4>
+              <p class="meta">
+                <i class="fas fa-user"></i>Posted by<strong
+                  >David Warner</strong
+                >
+                | January 31 2021
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+                suscipit nemo porro. Deserunt, veritatis minima pariatur
+                accusamus tempore exercitationem eius quaerat! Deleniti ipsum ex
+                voluptatum commodi voluptas aut corporis molestias?
+              </p>
+              <a href="post.html" class="btn btn-light"
+                ><i class="fas fa-chevron"></i> Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>copyright &copy; 2020 - EdgeLedger</p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "transalateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "transalateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>

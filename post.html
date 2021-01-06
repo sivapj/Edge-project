@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post One</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"><i class="fas fa-book-open"></i>Edge</span
+          >Ledger
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#cases">Cases</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <h1>Blog</h1>
+      </div>
+    </header>
+    <main>
+      <section class="post">
+        <h2>Blog Post One</h2>
+        <p class="meta">
+          <i class="fas fa-user"></i>Posted by<strong>Virat Kohli</strong>
+          | January 01 2021
+        </p>
+        <img src="/images/bigpost/post2.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+          suscipit nemo porro. Deserunt, veritatis minima pariatur accusamus
+          tempore exercitationem eius quaerat! Deleniti ipsum ex voluptatum
+          commodi voluptas aut corporis molestias?
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Reprehenderit itaque consequatur aspernatur non, veritatis sapiente
+          alias rerum deleniti, laboriosam id ratione ipsam sequi odio repellat
+          explicabo nobis inventore nam magni! Sapiente accusantium reiciendis
+          animi a mollitia beatae deserunt cumque inventore officiis? Omnis est,
+          excepturi culpa earum laudantium saepe quis autem maxime ex
+          repudiandae dolor illo corrupti nam? Consequatur, in earum.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          possimus eligendi deleniti rem! Maxime, asperiores, aliquid
+          repellendus non voluptas quisquam rem exercitationem numquam harum
+          voluptatem quia ducimus! Eos, laudantium non voluptates magnam illum
+          laboriosam at eligendi distinctio amet possimus ab, saepe eveniet
+          eaque molestias cumque itaque veritatis ullam, harum quasi.
+        </p>
+      </section>
+    </main>
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>copyright &copy; 2020 - EdgeLedger</p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "transalateY(-70px)";
+          }
+          setTimeout(function () {
+            navbar.style.transform = "transalateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
